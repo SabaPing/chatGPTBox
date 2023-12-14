@@ -24,6 +24,7 @@ export const ModelMode = {
 export const chatgptWebModelKeys = [
   'chatgptFree35',
   'chatgptPlus4',
+  'chatgptPlus4Plugins',
   'chatgptFree35Mobile',
   'chatgptPlus4Browsing',
   'chatgptPlus4Mobile',
@@ -72,10 +73,19 @@ export const poeWebModelKeys = [
  * @type {Object.<string,Model>}
  */
 export const Models = {
-  chatgptFree35: { value: 'text-davinci-002-render-sha', desc: 'ChatGPT (Web)' },
+  chatgptFree35: {
+    value: 'text-davinci-002-render-sha',
+    desc: 'Our fastest model, great for most everyday tasks.',
+  },
 
-  chatgptPlus4: { value: 'gpt-4', desc: 'ChatGPT (Web, GPT-4)' },
-  chatgptPlus4Browsing: { value: 'gpt-4-browsing', desc: 'ChatGPT (Web, GPT-4, Browsing)' },
+  chatgptPlus4: {
+    value: 'gpt-4',
+    desc: 'Browsing, Advanced Data Analysis, and DALL·E are now built into GPT-4.',
+  },
+  chatgptPlus4Plugins: {
+    value: 'gpt-4-plugins',
+    desc: 'An experimental model that knows when and how to use plugins.',
+  },
 
   chatgptApi35: { value: 'gpt-3.5-turbo', desc: 'ChatGPT (GPT-3.5-turbo)' },
   chatgptApi35_16k: { value: 'gpt-3.5-turbo-16k', desc: 'ChatGPT (GPT-3.5-turbo-16k)' },
